@@ -1,32 +1,28 @@
-# React + TypeScript + Vite
+# My First React App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+The app built for the Week 2 guided activity: a single custom component,
+`MyComponent`, that renders a heading and a paragraph and is styled from its own
+CSS file. See the [activity instructions](../README.md) for the full walkthrough.
 
-Currently, two official plugins are available:
+## Run it locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+Vite prints a local URL, usually http://localhost:5173/.
+
+| Script | What it does |
+| --- | --- |
+| `npm run dev` | Start the development server with hot reloading |
+| `npm run build` | Type-check with `tsc` and build for production |
+| `npm run preview` | Serve the production build locally |
+| `npm run lint` | Lint the source with oxlint |
+
+## Source layout
+
+- `src/main.tsx` — entry point; mounts `App` into `index.html`
+- `src/App.tsx` — renders `MyComponent`
+- `src/MyComponent.tsx` / `src/MyComponent.css` — the custom component and its styles
+- `src/App.css`, `src/index.css` — layout and global styles
