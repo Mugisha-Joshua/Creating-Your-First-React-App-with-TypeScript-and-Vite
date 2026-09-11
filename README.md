@@ -187,4 +187,4 @@ You should now see your styled component with the heading and paragraph displaye
   * **React Documentation:** The official React documentation is an excellent resource: [https://react.dev/](https://react.dev/)
   * **TypeScript Documentation:** Learn more about TypeScript and its features: [https://www.typescriptlang.org/](https://www.typescriptlang.org/)
 
-Happy coding\!
+
